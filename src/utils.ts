@@ -1,5 +1,5 @@
 import { FindAttributeOptions, FindOptions } from 'sequelize';
-import { AssociationGetOptions } from 'sequelize-typescript/dist/model/model/association/association-get-options';
+import { AssociationGetOptions } from 'sequelize-typescript';
 
 export function collectAttributes(options: (FindOptions | undefined)[]): FindAttributeOptions | undefined {
   if (options.some((option) => !option || !option.attributes)) {
